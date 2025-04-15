@@ -26,4 +26,5 @@ urlpatterns = [
     path('about/', views.about, name = "about"),
     path('contact/', views.contact, name = "contact"),
     path('chai/', include('firstApp.urls')),
+     path('api/', include('users.urls')),
 ] + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT ) 
