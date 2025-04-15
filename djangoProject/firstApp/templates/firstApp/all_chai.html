@@ -6,4 +6,14 @@
 
 {% block content %}
   <h1>All items are available here</h1>
+  {% for user in users %}
+    <div class="user-item">
+      <h3>{{ user.firstName }}</h3>
+      <img src="{{ user.image.url }}" alt="" />
+    </div>
+  {% endfor %}
+{% endblock %}
+
+{% block userData %}
+
 {% endblock %}
